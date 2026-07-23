@@ -1,0 +1,21 @@
+id: hello_world_python
+name: Hello World Check using Python
+enabled: true
+
+entrypoint: check.py
+
+timeout: 120
+
+requires:
+  - hello_world_perl
+
+parameters:
+  ParameterA: foo
+
+variables:
+  VariableA: bar
+
+tags:
+  - example
+  - hello world
+  - python

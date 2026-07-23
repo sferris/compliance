@@ -1,0 +1,20 @@
+id: hello_world_bash
+name: Hello World Check using Bash
+enabled: true
+
+entrypoint: check.sh
+
+timeout: 120
+
+#requires:
+#  - host_reachable
+
+parameters:
+  ParameterA: foo
+
+variables:
+  VariableA: bar
+
+tags:
+  - example
+  - hello world

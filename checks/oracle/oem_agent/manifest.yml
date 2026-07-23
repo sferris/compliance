@@ -1,0 +1,18 @@
+id: oem_agent
+name: OEM Agent Validation
+enabled: true
+
+entrypoint: check.py
+
+timeout: 120
+
+requires:
+  - host_reachable
+
+parameters:
+  upload_threshold_minutes: 30
+  expected_version: "13.5"
+
+tags:
+  - oracle
+  - oem
